@@ -17,9 +17,9 @@ class RandomComputerPlayer(Player):
     def __init__(self, letter):
         super().__init__(letter)
 
-    def get_move(game):
+    def get_move(self, game):
         # get a random valid spot for our next move
-        square = random.choice(game.available_moves)
+        square = random.choice(game.available_moves())
         return square
 
 
@@ -27,11 +27,11 @@ class HumanPlayer(Player):
     def __init__(self, letter):
         super().__init__(letter)
 
-    def get_move(game):
+    def get_move(self, game):
         valid_square = False
         val = None
         while not valid_square:
-            square = input(self.letter + '\'s turn. Input move (0-9)')
+            square = input(self.letter + '\'s turn. Input move (0-8)')
 
             try:
                 val = int(square)
