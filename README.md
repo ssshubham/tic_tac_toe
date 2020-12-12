@@ -1,2 +1,3 @@
-# tic_tac_toe
-This repository contains code for tic_tac_toe
+# Tic Tac Toe
+
+Run the python code to play Tic Tak Toe
